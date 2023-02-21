@@ -19,3 +19,4 @@ terraform/module/.terraform
 terraform/module/.terraform.lock.hcl
 terraform/module/terraform.tfstate
 terraform/module/terraform.tfstate.backup
+.idea
