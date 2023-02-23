@@ -1,4 +1,4 @@
-package hello_world
+package test
 
 import (
 	"github.com/gruntwork-io/terratest/modules/terraform"
@@ -8,7 +8,7 @@ import (
 
 func TestTerraformHelloWorld(t *testing.T) {
 	terraformOptions := terraform.WithDefaultRetryableErrors(t, &terraform.Options{
-		TerraformDir: "../../terraform/resource/hello-world",
+		TerraformDir: "../terraform/resource/hello-world",
 	})
 
 	defer terraform.Destroy(t, terraformOptions)

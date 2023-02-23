@@ -1,4 +1,4 @@
-package storage_account
+package test
 
 import (
 	"github.com/gruntwork-io/terratest/modules/azure"
@@ -11,7 +11,7 @@ const subscriptionID string = "6b651eb2-7854-43ce-89b8-5490b1a07783"
 
 func TestStorageAccount(t *testing.T) {
 	terraformOptions := terraform.WithDefaultRetryableErrors(t, &terraform.Options{
-		TerraformDir: "../../terraform/module",
+		TerraformDir: "../terraform/module",
 	})
 
 	//defer terraform.Destroy(t, terraformOptions)
