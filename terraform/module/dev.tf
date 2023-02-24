@@ -6,3 +6,8 @@ module "storage-account" {
 module "resource-group" {
   source = "../resource/resource-group"
 }
+
+module "eventhub" {
+  source              = "../resource/eventhub"
+  resource_group_name = module.resource-group.resource_group_name
+}

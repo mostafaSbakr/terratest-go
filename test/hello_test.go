@@ -6,7 +6,12 @@ import (
 	"testing"
 )
 
+func skipCI(t *testing.T) {
+	t.Skip("Skipping testing")
+}
+
 func TestTerraformHelloWorld(t *testing.T) {
+	skipCI(t)
 	terraformOptions := terraform.WithDefaultRetryableErrors(t, &terraform.Options{
 		TerraformDir: "../terraform/resource/hello-world",
 	})

@@ -1,5 +1,5 @@
 variable "storage_account_name" {
-  default = "terratingeststorage"
+  default = "terratestingstorage"
 }
 variable "location" {
   default = "westeurope"

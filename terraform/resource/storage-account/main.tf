@@ -7,11 +7,6 @@ terraform {
   }
 }
 
-provider "azurerm" {
-  subscription_id = "6b651eb2-7854-43ce-89b8-5490b1a07783"
-  features {}
-}
-
 resource "azurerm_storage_account" "storage_account" {
   name                      = var.storage_account_name
   location                  = var.location
