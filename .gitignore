@@ -18,3 +18,4 @@ arm_vars.sh
 terraform/module/.terraform
 .idea
 terratest-go.iml
+credentials.txt
